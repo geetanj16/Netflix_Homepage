@@ -13,12 +13,15 @@ body{
 
 .header{
     width: 100%;
-    height: 100vh;
+    height: 96vh;
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/header-image.png);
     background-size: cover;
     background-position: center;
     padding: 10px 8%;
     position: relative;
+    padding: 50px 15% 10px;
+    border-bottom: 8px solid #2d2d2d;
+    
 }
 
 nav{
@@ -123,9 +126,12 @@ nav button{
     padding: 50px 0;
 }
 
+
+
 .text-col{
     flex-basis: 50%;
     margin-bottom: 20px;
+
 }
 
 .img-col{
@@ -156,8 +162,8 @@ nav button{
 }
 
 .faq h2{
-    font-weight: 500;
-    font-size: 40px;
+    font-weight: 700;
+    font-size: 50px;
 }
 
 
@@ -216,6 +222,9 @@ input[type="radio"]{
 }
 
 
+
+
+
 .faq .email-signup{
     max-width: 600px;
     margin:20px auto 60px;
@@ -230,12 +239,12 @@ input[type="radio"]{
 
 .footer{
     padding: 50px 15% 10px;
-    border-top: 6px solid #333;
-    color: #777;
+    border-top: 8px solid #333;
+    color: #2d2d2d;
 }
 
 
-.footer{
+.footer h2{
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 30px;
@@ -274,6 +283,76 @@ input[type="radio"]{
     margin-bottom: 10px;
 }
 
+
+/* --------media-queries------- */
+
+@media only screen and (max-width:600px){
+    .logo{
+        width: 100px;
+    }
+
+    nav button{
+        padding: 5px 10px;
+    }
+
+    nav .language-btn{
+        padding: 4px 8px;
+    }
+    
+    .header-content{
+        position: unset;
+        transform: none;
+        padding-top: 150px;
+    }
+
+    .header-content h1{
+        font-size: 30px;
+    }
+
+    .email-signup button{
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+
+    .text-col, .img-col{
+        flex-basis: 100%;
+    }
+
+    .features h2{
+        font-size: 30px;
+    }
+    
+    .features p{
+        font-size: 15px;
+    }
+
+    .row:nth-child(2),.row:nth-child(4){
+        flex-direction: column-reverse;
+    }
+
+    .features .row{
+        padding: 10px 0;
+    }
+
+    .faq h2{
+        font-size: 20px;
+    }
+
+    .accordian .content{
+        font-size: 14px;
+    }
+
+    .accordian li label{
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    lable::after{
+        font-size: 22px;
+    }
+
+
+}
 
 
 
